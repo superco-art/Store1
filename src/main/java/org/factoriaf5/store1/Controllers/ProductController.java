@@ -20,6 +20,7 @@ public class ProductController {
                 );
     }
 
+
     private List<Product> products = new ArrayList<>();
 
     @GetMapping("/products")
