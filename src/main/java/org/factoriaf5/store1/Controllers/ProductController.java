@@ -12,20 +12,19 @@ import java.util.List;
 public class ProductController {
 
     private List<Product> products;
-    public ProductController(){
+
+    public ProductController() {
 
         products = List.of(
-                new Product(20,"Lotion SPF"),
+                new Product(20, "Lotion SPF"),
                 new Product(15, "Lotion After Sun")
-                );
+        );
     }
-
-
-    private List<Product> products = new ArrayList<>();
 
     @GetMapping("/products")
     public List<Product> check() {
-        public List<Product> allProducts()
-        return products;
+        public List<Product> allProducts () {
+            return products;
+        }
     }
 }
