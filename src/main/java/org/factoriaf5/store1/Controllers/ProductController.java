@@ -1,6 +1,7 @@
 package org.factoriaf5.store1.Controllers;
 
 import org.factoriaf5.store1.model.Product;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,4 +30,8 @@ public class ProductController {
         public void addProducts(Product product) {
         products.add(product);
         }
+
+        @DeleteMapping("/products")
+
+
     }
